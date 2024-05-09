@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask JSON Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfcfcf;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin : 0 auto;
+            padding: 20px;
+            background-color: #ffe8e8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Osobní informace</h1>
+        <p>Name: {{ data.name }}</p>
+        <p>Age: {{ data.age }}</p>
+        <p>City: {{ data.city }}</p>
+        <p>Job: {{ data.job }}</p>
+        <p>Description: {{ data.description }}</p>
+        <p>Signature: {{ data.signature }}</p>
+    </div>
+</body>
+</html>
